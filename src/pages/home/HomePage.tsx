@@ -1,12 +1,10 @@
 import { styled } from "@mui/material";
 import React from "react";
-import Calendar from "react-calendar";
+import Calendar from "@/components/molecules/Calendar";
 import Navigation from "@/components/molecules/Navigation";
-import { formatDate } from "date-fns";
-import "react-calendar/dist/Calendar.css";
 
 const StyledPage = styled("div", {
-  name: "HomePage",
+  name: "HomePageWrap",
   slot: "Root",
 })({});
 
@@ -20,12 +18,7 @@ const HomePage: React.FC = () => {
     <StyledPage>
       <Navigation />
       <StyledContainer>
-        <Calendar
-          formatDay={(locale: string | undefined, date: Date) =>
-            formatDate(date, "d")
-          }
-          className={"homepage-calendar"}
-        />
+        <Calendar />
       </StyledContainer>
     </StyledPage>
   );

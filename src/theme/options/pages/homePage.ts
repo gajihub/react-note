@@ -1,14 +1,22 @@
 const themeOption = {
-  HomePage: {
+  HomePageWrap: {
     styleOverrides: {
-      root: () => ({}),
+      root: {
+        width: "100%",
+        display: "flex",
+        paddingTop: "64px",
+        height: "100vh",
+      },
     },
   },
   HomeContainer: {
     styleOverrides: {
-      root: () => ({
+      root: {
         width: "100%",
-      }),
+        ".react-calendar": {
+          width: "100%",
+        },
+      },
     },
   },
 };

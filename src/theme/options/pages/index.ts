@@ -1,4 +1,4 @@
-import homePage from "@/theme/options/pages/homePage";
+import homePage from "./homePage";
 
 const themeOption = {
   ...homePage,
